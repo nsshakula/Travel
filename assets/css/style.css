@@ -1,0 +1,382 @@
+@font-face {
+  font-family: "Circular Std Black";
+  src: url("../fonts/CircularStd-Black.eot");
+  src: local("Circular Std Black"), local("CircularStd-Black"),
+    url("../fonts/CircularStd-Black.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CircularStd-Black.woff2") format("woff2"),
+    url("../fonts/CircularStd-Black.woff") format("woff"),
+    url("../fonts/CircularStd-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std Medium";
+  src: url("../fonts/CircularStd-Medium.eot");
+  src: local("Circular Std Medium"), local("CircularStd-Medium"),
+    url("../fonts/CircularStd-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CircularStd-Medium.woff2") format("woff2"),
+    url("../fonts/CircularStd-Medium.woff") format("woff"),
+    url("../fonts/CircularStd-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Circular Std Book";
+  src: url("../fonts/CircularStd-Book.eot");
+  src: local("Circular Std Book"), local("CircularStd-Book"),
+    url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/CircularStd-Book.woff2") format("woff2"),
+    url("../fonts/CircularStd-Book.woff") format("woff"),
+    url("../fonts/CircularStd-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Conv_Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.eot");
+  src: local("☺"), url("../fonts/Roboto-Bold.woff") format("woff"),
+    url("../fonts/Roboto-Bold.ttf") format("truetype"),
+    url("../fonts/Roboto-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Conv_smith-allison";
+  src: url("../fonts/smith-allison.eot");
+  src: local("☺"), url("../fonts/smith-allison.woff") format("woff"),
+    url("../fonts/smith-allison.ttf") format("truetype"),
+    url("../fonts/smith-allison.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template:
+    "header" minmax(80px, auto)
+    "main" 1fr
+    "footer" minmax(100px, auto) / 1fr;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-items: center;
+  gap: 140px;
+}
+
+.header__logo {
+  width: 200px;
+}
+
+.header__list {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+  width: 500px;
+}
+
+.header__list li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.header__link {
+  font-family: "Circular Std Medium";
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.main {
+  grid-area: main;
+  display: grid;
+}
+
+.main__slogan {
+  display: grid;
+  background-image: url(../image/big.png);
+  background-size: cover;
+  min-height: 813px;
+}
+
+.main__title {
+  font-family: "Conv_smith-allison";
+  font-style: normal;
+  font-size: 341.1px;
+  line-height: 282px;
+  color: rgba(255, 199, 0, 1);
+}
+
+.main__subtitle {
+  font-family: "Circular Std Black";
+  font-size: 300px;
+  line-height: 228px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main__content {
+  font-family: "Circular Std Medium";
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+
+.main__wrap-top {
+  display: grid;
+  min-height: 1012px;
+  background: linear-gradient(
+    180deg,
+    #00beac 43.53%,
+    rgba(0, 190, 172, 0) 100%
+  );
+}
+
+.wrap-top {
+  display: grid;
+  text-align: center;
+}
+.main__title-top {
+  font-size: 200px;
+  line-height: 166px;
+}
+
+.main__subtitle-top {
+  font-size: 80px;
+}
+
+.main__text {
+  width: 1000px;
+  font-family: "Circular Std Book";
+  font-size: 26px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.main__galerry-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.main__title-galerry {
+  font-family: "Circular Std Black";
+  font-size: 40px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.main__subtitle-galerry {
+  font-family: "Circular Std Medium";
+  font-size: 14px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.gallery-item1 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(..//image/Paraty.png);
+  background-size: cover;
+  width: 310px;
+  height: 553px;
+}
+.gallery-item2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(..//image/Morretes.png);
+  background-size: cover;
+  width: 310px;
+  height: 553px;
+}
+.gallery-item3 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(..//image/Olinda.png);
+  background-size: cover;
+  width: 310px;
+  height: 553px;
+}
+.gallery-item4 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(..//image/Gramado.png);
+  background-size: cover;
+  width: 310px;
+  height: 553px;
+}
+.main__wrap-more {
+  display: grid;
+  min-height: 1012px;
+  background: linear-gradient(
+    180deg,
+    #f5fffe 0%,
+    #f5fffe 47.71%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.main__content-more {
+  display: grid;
+}
+
+.main__galerry-more {
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;*/
+}
+
+.main__title-color {
+  color: rgba(12, 162, 150, 1);
+  font-size: 200px;
+}
+.main__subtitle-color {
+  color: rgba(0, 0, 0, 1);
+  font-size: 80px;
+}
+
+.main__text-color {
+  color: rgba(86, 86, 86, 1);
+}
+
+.gallery-item5 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(../image/Estaing.png);
+  background-size: cover;
+  width: 342px;
+  height: 710px;
+}
+.gallery-item6 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(../image/Vík\ í\ Mýrda.png);
+  background-size: cover;
+  width: 459px;
+  height: 345px;
+}
+.gallery-item7 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(../image/Hamnoy\ village.png);
+  background-size: cover;
+  width: 459px;
+  height: 345px;
+}
+.gallery-item8 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.92) 100%
+    ),
+    url(../image/Montego\ Bay.png);
+  background-size: cover;
+  width: 938px;
+  height: 345px;
+}
+.footer {
+  background-color: rgba(0, 53, 49, 1);
+  min-height: 700px;
+}
+
+.footer__wrap {
+  display: grid;
+}
+
+.footer__image-big {
+  background-image: linear-gradient(
+      180deg,
+      #f5fffe 0%,
+      #f5fffe 47.71%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../image/footer.png);
+  background-size: cover;
+  min-height: 70%;
+}
+
+.footer__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer__menu-title {
+  font-family: "Circular Std Black";
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(208, 208, 208, 1);
+}
+
+.footer__menu-link {
+  font-family: "Circular Std Book";
+  font-size: 16px;
+  line-height: 133.71%;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.footer__icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.footer__icon-fb {
+  background-image: url(../image/svg/facebook.svg);
+  background-size: cover;
+}
+.footer__icon-twitter {
+  background-image: url(../image/svg/twitter.svg);
+  background-size: cover;
+}
+.footer__icon-instagram {
+  background-image: url(../image/svg/instagram.svg);
+  background-size: cover;
+}
+.footer__icon-linkedin {
+  background-image: url(../image/svg/linkedin.svg);
+  background-size: cover;
+}
