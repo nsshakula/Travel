@@ -70,6 +70,9 @@ ul {
 .wrapper {
   display: grid;
   min-height: 100vh;
+  /*max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;*/
   grid-template:
     "header" minmax(80px, auto)
     "main" 1fr
@@ -111,11 +114,9 @@ ul {
 
 .main {
   grid-area: main;
-  display: grid;
 }
 
 .main__slogan {
-  display: grid;
   background-image: url(../image/big.png);
   background-size: cover;
   min-height: 813px;
@@ -124,9 +125,10 @@ ul {
 .main__title {
   font-family: "Conv_smith-allison";
   font-style: normal;
-  font-size: 341.1px;
+  font-size: 341px;
   line-height: 282px;
   color: rgba(255, 199, 0, 1);
+  padding: 200px 0 0 90px;
 }
 
 .main__subtitle {
@@ -134,6 +136,7 @@ ul {
   font-size: 300px;
   line-height: 228px;
   color: rgba(255, 255, 255, 1);
+  padding: 0 0 0 70px;
 }
 
 .main__content {
@@ -141,10 +144,11 @@ ul {
   font-size: 18px;
   line-height: 100%;
   color: rgba(255, 255, 255, 1);
+  text-align: end;
+  padding-right: 70px;
 }
 
 .main__wrap-top {
-  display: grid;
   min-height: 1012px;
   background: linear-gradient(
     180deg,
@@ -154,29 +158,42 @@ ul {
 }
 
 .wrap-top {
-  display: grid;
   text-align: center;
 }
 .main__title-top {
   font-size: 200px;
   line-height: 166px;
+  padding-top: 100px;
 }
 
 .main__subtitle-top {
   font-size: 80px;
+  line-height: 100%;
 }
 
 .main__text {
-  width: 1000px;
+  width: 972px;
+  margin: auto;
   font-family: "Circular Std Book";
   font-size: 26px;
   line-height: 100%;
   color: rgba(255, 255, 255, 1);
+  padding-top: 20px;
+  padding-bottom: 90px;
 }
 .main__galerry-top {
   display: grid;
+  min-height: 553px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: center;
+  padding: 0 70px 0 70px;
+}
+
+.galerry-top-wrap {
+  width: 138px;
+  text-align: center;
+  padding: 364px 0 0 0;
+  margin: 0 93px 0 93px;
 }
 
 .main__title-galerry {
@@ -203,8 +220,7 @@ ul {
     ),
     url(..//image/Paraty.png);
   background-size: cover;
-  width: 310px;
-  height: 553px;
+  border-radius: 10px;
 }
 .gallery-item2 {
   background-image: linear-gradient(
@@ -214,8 +230,7 @@ ul {
     ),
     url(..//image/Morretes.png);
   background-size: cover;
-  width: 310px;
-  height: 553px;
+  border-radius: 10px;
 }
 .gallery-item3 {
   background-image: linear-gradient(
@@ -225,8 +240,7 @@ ul {
     ),
     url(..//image/Olinda.png);
   background-size: cover;
-  width: 310px;
-  height: 553px;
+  border-radius: 10px;
 }
 .gallery-item4 {
   background-image: linear-gradient(
@@ -236,11 +250,9 @@ ul {
     ),
     url(..//image/Gramado.png);
   background-size: cover;
-  width: 310px;
-  height: 553px;
+  border-radius: 10px;
 }
 .main__wrap-more {
-  display: grid;
   min-height: 1012px;
   background: linear-gradient(
     180deg,
@@ -251,22 +263,28 @@ ul {
 }
 
 .main__content-more {
-  display: grid;
+  text-align: center;
 }
 
 .main__galerry-more {
   display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;*/
+  min-height: 710px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 0 70px 0 70px;
 }
 
 .main__title-color {
   color: rgba(12, 162, 150, 1);
   font-size: 200px;
+  line-height: 166px;
+  padding-top: 10px;
 }
 .main__subtitle-color {
   color: rgba(0, 0, 0, 1);
   font-size: 80px;
+  line-height: 100%;
 }
 
 .main__text-color {
@@ -281,9 +299,29 @@ ul {
     ),
     url(../image/Estaing.png);
   background-size: cover;
-  width: 342px;
-  height: 710px;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 10px;
 }
+
+.title-galerry-item5 {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main__title-galerry-item5 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 365px;
+}
+
+.main__subtitle-galerry-item5 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 .gallery-item6 {
   background-image: linear-gradient(
       180deg,
@@ -292,9 +330,24 @@ ul {
     ),
     url(../image/Vík\ í\ Mýrda.png);
   background-size: cover;
-  width: 459px;
-  height: 345px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-radius: 10px;
 }
+
+.main__title-galerry-item6 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 223px;
+}
+
+.main__subtitle-galerry-item6 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 .gallery-item7 {
   background-image: linear-gradient(
       180deg,
@@ -303,9 +356,24 @@ ul {
     ),
     url(../image/Hamnoy\ village.png);
   background-size: cover;
-  width: 459px;
-  height: 345px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  border-radius: 10px;
 }
+
+.main__title-galerry-item7 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 223px;
+}
+
+.main__subtitle-galerry-item7 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 .gallery-item8 {
   background-image: linear-gradient(
       180deg,
@@ -314,16 +382,32 @@ ul {
     ),
     url(../image/Montego\ Bay.png);
   background-size: cover;
-  width: 938px;
-  height: 345px;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  border-radius: 10px;
 }
+
+.main__title-galerry-item8 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 195px;
+}
+
+.main__subtitle-galerry-item8 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 .footer {
   background-color: rgba(0, 53, 49, 1);
-  min-height: 700px;
+  min-height: 900px;
 }
 
 .footer__wrap {
-  display: grid;
+  min-height: 327px;
+  padding-top: 50px;
 }
 
 .footer__image-big {
@@ -335,18 +419,28 @@ ul {
     ),
     url(../image/footer.png);
   background-size: cover;
-  min-height: 70%;
+  min-height: 523px;
 }
 
 .footer__nav {
   display: grid;
+  min-height: 234px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center;
+  padding-left: 77px;
+}
+
+.footer__menu {
+  display: grid;
+  gap: 10px;
 }
 
 .footer__menu-title {
   font-family: "Circular Std Black";
   font-size: 16px;
   line-height: 25px;
+
   color: rgba(208, 208, 208, 1);
 }
 
